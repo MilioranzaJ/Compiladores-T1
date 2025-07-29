@@ -93,6 +93,7 @@ q_comment: Ignora linhas de comentário
 
 
 👩‍💻 Autoras
+
 Julia Gomes (Gremista)
 
 Tuliana Andrade (Palmeirense)
