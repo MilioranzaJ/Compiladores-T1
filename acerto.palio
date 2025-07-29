@@ -1,0 +1,15 @@
+# Função de saudação
+pg-def saudacao(nome):
+    pg-print("Olá, " + nome)
+
+# Verificação de condição
+pg-if pg-true:
+    saudacao("Julia")
+
+# Operações matemáticas
+pg-def soma(a, b):
+    resultado = a + b
+    pg-return resultado
+
+# Teste com número real
+valor = 10.5

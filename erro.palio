@@ -1,0 +1,7 @@
+pg-def saudacao(nome):
+    pg-print("Olá, " + nome)
+
+pg-if pg-true:
+    saudacao("Julia")
+
+@invalido = 42
