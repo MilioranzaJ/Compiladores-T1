@@ -33,7 +33,7 @@ SINGLE_SYMBOLS = {
 # Funções simples para verificar o tipo de um caractere.
 
 def is_letter(char):
-    """Verifica se um caractere é uma letra (a-z, A-Z) ou um subtraço ('_')."""
+    """Verifica se um caractere é uma letra (a-z, A-Z) ou um underline ('_')."""
     return char.isalpha() or char == "_"
 
 def is_digit(char):
@@ -117,8 +117,8 @@ def tokenize(code):
 
             # --- ESTADO q_id: RECONHECIMENTO DE IDENTIFICADORES E PALAVRAS-CHAVE ---
             elif state == "q_id":
-                if is_letter(char) or is_digit(char):
-                    # Continua guardando caracteres enquanto forem letras ou dígitos.
+                if is_letter(char) or is_digit(char) or char == '-':
+                    # Continua guardando caracteres enquanto forem letras, dígitos ou hífen.
                     lexeme += char
                     index += 1
                 else:
